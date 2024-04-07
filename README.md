@@ -1,8 +1,3 @@
-# React + Vite
+# Priyanka Dave - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Developed a professional responsive portfolio website to showcase my skills, projects, and professional journey using React and Tailwind CSS. Implemented a user-friendly navigation system using React hooks and components and integrated multimedia elements for dynamic user experience.
