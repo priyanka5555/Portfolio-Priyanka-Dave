@@ -30,9 +30,12 @@ const Home = () => {
           <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md
           bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
             Download Resume 
-            <svg className="animate-bounce w-6 h-6 ..."> 
-              <GoDownload  size={25} className='ml-1' />
-              </svg>
+           
+           
+                <GoDownload size={25} className='ml-1' />
+                
+            
+             
          </button> 
          </a>
           </div>

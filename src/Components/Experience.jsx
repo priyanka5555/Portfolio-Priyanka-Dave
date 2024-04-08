@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 
-const Experience = () => {
+const Experience = ({ workExp }) => {
+  const scrollableCardRefs = useRef([]);
+
+  const handleMouseLeave = (index) => {
+    scrollableCardRefs.current[index].scrollTo(0, 0);
+  };
+
     const work = [
         {
           id: 1,
@@ -78,7 +84,7 @@ const Experience = () => {
   return (
    
     <div name="experience"
-       className=' grid bg-gradient-to-b from-gray-800 to-black  text-white py-24 sm:py-32 md:h-screen'>  
+       className=' grid bg-gradient-to-b from-gray-800 to-black  text-white py-24 sm:py-32 md:h-fit'>  
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col  justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 
@@ -92,7 +98,9 @@ const Experience = () => {
         {work.map(({ id, jobTitle, duration, employer, location,desc }) => (
            
               <div key={id} className='px-2 py-2 cursor-pointer capitalize font-medium
-         text-gray-500 hover:scale-105 duration-200 h-60 overflow-y-scroll no-scrollbar'>  
+         text-gray-500 hover:scale-105 duration-200 h-60 overflow-y-scroll no-scrollbar 
+          onMouseLeave={() => handleMouseLeave(index)}
+                 onMouseEnter={() => scrollableCardRefs.current[index].scrollTo(0, 0)}>'>  
 
                 <div className="flex items-center gap-x-4 text-xs ">
                   <time className="text-gray-400 hover:text-gray-600">{duration}</time>
@@ -120,7 +128,7 @@ const Experience = () => {
                   </div>
                 </div>
               </div>
-    
+          
           ))}
 
 
@@ -134,3 +142,7 @@ const Experience = () => {
 };
 
 export default Experience
+
+
+
+

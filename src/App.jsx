@@ -4,7 +4,8 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import SocialLinks from './Components/SocialLinks';
 import Contact from './Components/Contact';
- import Experience from './Components/Experience';
+import Experience from './Components/Experience';
+
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <Navbar />
     <Home />
     <Experience />
+   
     <Projects />
     <Skills />
     <Contact />
